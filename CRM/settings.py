@@ -24,7 +24,7 @@ TEMPLATE_DIR = os.path.join(BASE_DIR,'accounts')
 SECRET_KEY = '3*7s3$6b)*%u92@n2+diqe^2_ywvh1b!t^$5cete%wz7$%%)i='
 
 # SECURITY WARNING: don't run with debug turned on in production!
-DEBUG = False
+DEBUG = True
 
 ALLOWED_HOSTS = ['crmbyabhi.herokuapp.com','127.0.0.1']
 
