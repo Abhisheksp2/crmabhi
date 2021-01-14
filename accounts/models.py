@@ -4,6 +4,7 @@ from django.contrib.auth.models import User
 # Create your models here.
 #if you want to save blank field you need to allow it on Django and Database level. blank=True -
 # will allow empty field in admin panel null=True - will allow saving NULL to the database column.
+# first comment
 
 class Customer(models.Model):
     user = models.OneToOneField(User,null=True,blank=True,on_delete=models.CASCADE)
