@@ -3,6 +3,8 @@
 import os
 import sys
 
+"This is manage.py file"
+
 
 def main():
     os.environ.setdefault('DJANGO_SETTINGS_MODULE', 'CRM.settings')
