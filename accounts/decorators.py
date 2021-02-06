@@ -2,6 +2,7 @@ from django.http import HttpResponse
 from django.shortcuts import redirect
 
 def unaunthenticated_user(view_func):
+    """To check user is authenticated is not."""
     def wrapper_fun(request,*args,**kwargs):
         if request.user.is_authenticated:
             return redirect('home')
