@@ -50,3 +50,11 @@ def unaunthenticated_user2(view_func):
             return view_func(request,*args,**kwargs)
     return wrapper_fun
 
+def unaunthenticated_user4(view_func):
+    def wrapper_fun(request,*args,**kwargs):
+        if request.user.is_authenticated:
+            return redirect('home')
+        else:
+            return view_func(request,*args,**kwargs)
+    return wrapper_fun
+
